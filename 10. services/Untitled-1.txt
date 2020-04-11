@@ -1,0 +1,15 @@
+1. setup 
+2. model and controller 
+3. data bding 
+   - string interpolation
+   - event binding 
+4. two way data binding 
+5. ng-src, ng-app, ng-controller, ng-model
+5. ng-repeat  
+6. filters 
+   -limitTo 
+   -orderBy
+   - filter 
+7. ng-hide 
+8. ng-init 
+9. ng-include 

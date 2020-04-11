@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body  ng-controller="myController">
+    <div ng-include="'employeeTable.html'">
+
+    </div>
+    <div ng-include="htmlPath">
+
+    </div>
+    <!-- another example -->
+    Select View :
+    <select ng-model="employeeView">
+        <option value="employeeTable.html">Table</option>
+        <option value="employeeList.html">List</option>
+    </select>
+    <br /><br />
+    <div ng-include="employeeView">
+    </div>
+</body>
+</html>

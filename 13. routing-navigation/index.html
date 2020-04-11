@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.min.js"></script>
+    <script src="script.js"></script>
+    <base href="/">
+    <style>
+        body{
+            margin : 0;
+        }
+        ul{
+            background-color: cadetblue;
+            width: 100%;
+            margin: 0;
+            padding: 20px;
+        }
+        ul li{
+            display: inline;
+           
+        }
+        ul li a {
+            margin: 20px;
+            color: white
+        }
+    </style>
+</head>
+
+<body ng-controller="appController">
+    <h4>{{data}}</h4>
+<ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="contact">Contact</a></li>
+    <li><a href="services/product">Services</a></li>
+</ul>
+<div>
+    <ng-view>
+
+    </ng-view>
+</div>
+</body>
+</html>

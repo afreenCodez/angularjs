@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Date Of Birth</th>
+            <th>Gender</th>
+            <th>Salary(number)</th>
+            <th>Salary(currency)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="employee in emp">
+            <td>{{employee.firstName | uppercase}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.DOB | date:"dd-MM-yyyy"}}</td>
+            <td>{{employee.gender |lowercase}}</td>
+            <td>{{employee.salary|number:2}}</td>
+            <td>{{employee.salary|currency:'$'}}</td>
+        </tr>
+    </tbody>
+</table>
